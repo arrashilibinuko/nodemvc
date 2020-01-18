@@ -1,7 +1,7 @@
 exports.getusers = function(req,res){
     console.log("get users");
 
-    res.json("success");
+    res.json("GET USER");
 };
 
 exports.deleteusers = function(req,res){
