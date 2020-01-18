@@ -3,6 +3,14 @@ var path = require("path");
 var config = require("./config");
 var app = express();
 
+var index = require("./routes/index");
+
+// app.use('/',function(req,res){
+//     res.send("hello workd");
+//     res.end();
+// });
+app.use('/',index);
+
 // app.use('/',(req,res))
 
 if(!module.parent){
