@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User list</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>User List</h1>
+    <table>
+      <tr>
+        <td>Name</td><td>Email</td>
+      </tr>
+    <% model.forEach(function(item){ %>
+      <!-- <%= item.name %> <br /> -->
+    <tr>
+      <td><%= item.name %></td>
+      <td><%= item.email %></td>
+    </tr>
+    <% }); %>
+  </table>
+    <!-- <p>This is user List 1</p> -->
+  </body>
+</html>

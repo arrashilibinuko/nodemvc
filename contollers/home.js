@@ -1,5 +1,13 @@
-exports.index = function(req,res){
+// router.get('/', function(req, res, next) {
+//     res.render('index', { title: 'Express' });
+//   });
+
+
+
+exports.index = function(req,res,next){
     console.log("hello1");
-    res.send("friend login")
-    res.end()
+
+    res.render('index',({title:"express demo"}))
+    // res.send("friend login")
+    // res.end()
 }
